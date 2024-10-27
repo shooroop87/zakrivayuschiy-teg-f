@@ -1,2 +1,3 @@
 # Проект: Закрывающий тэг
-# Автор: Андрей
+
+https://github.com/shooroop87/zakrivayuschiy-teg-f/
