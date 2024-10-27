@@ -2,6 +2,13 @@
     /* --- Fonts --- */
     --font-family: 'Inter-Variable', sans-serif;
     --font-family-accent: 'PressStart2P', monospace;
+    --main-font: 'Inter-Variable', sans-serif;
+    --accent-font: 'PressStart2P', monospace;
+    --heart-main-body: #FF0000;
+    --font-family-weight: 400;
+    --font-size-small: 14px;
+    --font-size-base: 18px;
+    --line-height-base: 1.5;
     /* --- Colors --- */
     --main-color: #fff;
     --text-color: #000;
@@ -16,4 +23,25 @@
       linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     /* --- Other --- */
     --text-stroke: var(--main-color);
+    /* --- Padding --- */
+    --padding-large: 25px;
+    --padding-xlarge: 30px;
+    /* --- Gaps ---*/
+    --gap-small: 6px;
+    --gap-medium: 8px;
+    --gap-regular: 10px;
+    --gap-large: 20px;
+    --gap-xlarge: 25px;
+    --gap-xxlarge: 30px;
+    --gap-huge: 50px;
+    /* --- Animations --- */
+    --transition-default: 0.3s ease;
+    /* --- Base gradients --- */
+    --grid-light-horizontal: repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px);
+    --grid-light-vertical: repeating-linear-gradient(90deg, transparent 0 2px, #d3d3d3 2px 4px);
+    --grid-dark-horizontal: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px);
+    --grid-dark-vertical: repeating-linear-gradient(to bottom, transparent 0 2px, #000 2px 4px);
+    /* --- Background images --- */
+    --background-image-light: var(--grid-light-horizontal), var(--grid-light-vertical), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    --background-image-dark: var(--grid-dark-horizontal), var(--grid-dark-vertical), linear-gradient(to bottom, #007f0c, #004306);
 }
