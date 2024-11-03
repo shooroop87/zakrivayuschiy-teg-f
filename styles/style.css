@@ -7,9 +7,7 @@
   font-variation-settings: "wght" var(--font-family-weight);
   color: var(--text-color);
   background-color: var(--background-color, #ffffff);
-  background-image: repeating-linear-gradient(to right, var(--line-color, #d3d3d3) 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, var(--line-color, #d3d3d3) 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, var(--gradient-color-start, #e7e7e7) 0.01%,var(--gradient-color-end, #1a1a1a));
+  background-image: repeating-linear-gradient(to right, var(--line-color, #d3d3d3) 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, var(--line-color, #d3d3d3) 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, var(--gradient-color-start, #e7e7e7) 0.01%,var(--gradient-color-end, #1a1a1a));
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -142,12 +140,34 @@
       text-shadow: none;
  }
 }
+/* --- CARD IMAGES --- */
 .card__image {
   display: block;
   inline-size: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: right;
+}
+.image__filter-grayscale {
+  filter: grayscale(70%);
+}
+.image__filter-saturation {
+  filter: saturate(400%);
+}
+.image__filter-hue {
+  filter: hue-rotate(40deg);
+}
+.image__filter-invertion {
+  filter: invert(0.8);
+}
+.image__filter-sepia {
+  filter: sepia(90%);
+}
+.image__filter-blur {
+  filter: blur(12px);
+}
+.image__filter-combo {
+  filter: hue-rotate(42deg) saturate(150%) blur(1px);
 }
 .card__content {
   display: flex;
@@ -240,8 +260,7 @@
 .like-icon {
   block-size: 38px;
 }
-.like-icon:hover .main-body,
-.like-icon:hover .core {
+.like-icon:hover .main-body, .like-icon:hover .core {
   fill: var(--heart-contour);
 }
 .like-icon:hover .main-body {
@@ -250,8 +269,7 @@
 .like-icon:hover .core {
   transition: fill 0.3s linear;
 }
-.like-icon:active .main-body,
-.like-icon:active .core {
+.like-icon:active .main-body, .like-icon:active .core {
   fill: var(--heart-fill-color, #ff0000);
 }
 .like-icon:active .main-body {
@@ -351,31 +369,31 @@
 @media (width <= 375px) {
   .page {
       inline-size: 100vw;
-  }
+ }
   .save {
       margin-top: 5px;
-  }
+ }
   .save-button {
       flex-direction: column;
       align-items: center;
-  }
+ }
   .card__title {
-      width: 90%; 
-  }
+      width: 90%;
+ }
   .button__text {
       flex-grow: 1;
       text-align: center;
       white-space: nowrap;
-  }
+ }
   .card__label {
       inset-inline-end: 11px;
       inset-block-start: 22px;
-  }
+ }
   .card__content {
       gap: var(--gap-xlarge);
-  }
+ }
   .floppy-icon {
       inline-size: 28px;
       block-size: 28px;
-  }
+ }
 }
