@@ -64,13 +64,11 @@
   content: "▶";
   position: absolute;
   inset-inline-start: -19px;
+  animation: arrow 0.5s ease-in-out infinite alternate;
 }
 .theme-menu__button:disabled {
   color: var(--disabled);
   pointer-events: none;
-}
-.theme-menu__button:disabled::before {
-  animation: arrow 0.5s ease-in-out infinite alternate;
 }
 .theme-menu__button:hover {
   color: var(--disabled);
