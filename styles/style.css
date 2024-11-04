@@ -264,8 +264,6 @@
 }
 .card__icon-button:focus-visible {
   outline: none;
-}
-.card__icon-button:focus-visible {
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
