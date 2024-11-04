@@ -294,16 +294,17 @@
     <!-- SAVE BUTTON -->
     <div class="save">
       <button type="button" class="button save-button" onclick="window['popup'].showModal()" aria-controls="popup">
-        <svg class="floppy-icon" fill="currentColor" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg">
+        <svg class="floppy-icon" fill="currentColor" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </div>
+    </main>
     <!-- POPUP -->
     <dialog id="popup" class="dialog">
       <div class="dialog-title">
-        <svg class="floppy-icon" fill="currentColor" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+        <svg class="floppy-icon" fill="currentColor" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <h2 class="dialog-heading">Вставьте дискету,&nbsp;чтобы продолжить</h2>
@@ -312,7 +313,6 @@
         <span class="button__text">ок</span>
       </button>
     </dialog>
-    </main>
     <script src="./scripts/like.js"></script>
 </body>
 </html>
