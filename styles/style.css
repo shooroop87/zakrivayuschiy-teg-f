@@ -83,7 +83,8 @@
   inline-size: 0;
   block-size: 2px;
   background-color: var(--button-hover-color);    
-  transition: inline-size 0.3s, sbackground-color 1s;
+  transition: inline-size 0.3s;
+  transition: background-color 1s;
 }
 .theme-menu__button:focus-visible {
   outline: none;
@@ -258,7 +259,7 @@
   box-shadow: none;
 }
 .card__icon-button:focus-visible {
-  border: var(--button-hover-color        ) solid 2px;
+  border: var(--button-hover-color) solid 2px;
   transition: border 0.3s;
 }
 .card__like-button {
