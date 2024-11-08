@@ -13,12 +13,12 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 @keyframes arrow {
-  0% {
-      translate: translateX(0);
- }
-  100% {
-      translate: translateX(4px);
- }
+  from {
+    left: -13px;
+  }
+  to {
+    left: -17px;
+  }
 }
 @keyframes heart-animation {
   0% {
