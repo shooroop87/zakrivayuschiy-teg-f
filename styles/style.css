@@ -82,7 +82,7 @@
   display: block;
   inline-size: 0;
   block-size: 2px;
-  background-color: var(--button-hover-color);  
+  background-color: var(--button-hover-color);
   transition: inline-size 0.3s, sbackground-color 1s;
 }
 .theme-menu__button:focus-visible {
