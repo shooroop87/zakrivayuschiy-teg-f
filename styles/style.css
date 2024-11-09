@@ -198,7 +198,6 @@
   overflow: hidden;
   gap: var(--gap-medium);
   z-index: 1;
-  transition: box-shadow 0.3s ease;
 }
 .button:focus {
   outline: none;
@@ -217,9 +216,8 @@
   height: 100%;
   inset: 0;
   background-color: var(--text-color);
-  transition-duration: 0.5s;
+  transition: transform 0.5s ease-in-out;
   transform-origin: left;
-  transition-timing-function: ease-in-out;
   transform: scaleX(0);
 }
 .button:hover::after {
