@@ -60,11 +60,11 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  transition: opacity 0.3s;
 }
 .theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
-  transition: opacity 0.3s;
 }
 .theme-menu__button:disabled::before {
   content: '▶';
@@ -75,7 +75,6 @@
 .theme-menu__button:hover {
   opacity: 0.6;
   cursor: pointer;
-  transition: opacity 0.3s;
 }
 .theme-menu__button::after {
   content: '';
@@ -199,6 +198,7 @@
   overflow: hidden;
   gap: var(--gap-medium);
   z-index: 1;
+  transition: box-shadow 0.3s ease;
 }
 .button:focus {
   outline: none;
@@ -252,6 +252,7 @@
   cursor: pointer;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+  transition: border 0.3s ease;
 }
 .card__icon-button:focus {
   outline: none;
@@ -259,7 +260,6 @@
 }
 .card__icon-button:focus-visible {
   border: var(--button-accent-color) solid 2px;
-  transition: border 0.3s;
 }
 .card__like-button {
   width: 130px;
