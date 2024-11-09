@@ -14,6 +14,8 @@
     --disabled: rgba(0, 0, 0, 0.6);
     --button-hover-color: var(--main-color);
     --heart-contour: var(--text-color);
+    
+    --button-accent-color: #000;
 }
 /* Dark theme */
 :root.theme-dark {
@@ -31,6 +33,8 @@
     --disabled: rgba(0, 204, 20, 0.6);
     --button-hover-color: var(--text-color);
     --heart-contour: var(--text-color);
+
+    --button-accent-color: #00cc14;
 }
 /* Light theme */
 @media (prefers-color-scheme: light) {
@@ -49,6 +53,8 @@
         --disabled: rgba(0, 0, 0, 0.6);
         --button-hover-color: var(--main-color);
         --heart-contour: var(--text-color);
+
+        --button-accent-color: #000;
     }
 }
 /* Dark theme */
@@ -68,5 +74,7 @@
         --disabled: rgba(0, 204, 20, 0.6);
         --button-hover-color: var(--text-color);
         --heart-contour: var(--text-color);
+
+        --button-accent-color: #00cc14;
     }
 }
